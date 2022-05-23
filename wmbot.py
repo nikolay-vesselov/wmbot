@@ -1,7 +1,9 @@
 from time import sleep
 import xml.etree.ElementTree as ET
 import requests
+from webmoney_api import ApiInterface, WMProAuthInterface
 
+api = ApiInterface(WMProAuthInterface("276752932432", "kickkick", "/home/ubuntu/wmbot/276752932432.kwm"))
 
 
 
@@ -63,3 +65,4 @@ for child in root[1]:
 
 #get_rate(data_of_my_order, 1, 1, 1, 1, 1)
 print(my_order)
+ 
