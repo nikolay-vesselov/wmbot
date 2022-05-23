@@ -71,5 +71,7 @@ for child in root[1]:
 #get_rate(data_of_my_order, 1, 1, 1, 1, 1)
 print(my_order)
 
-unittest.main()
+TestWMSigner()
+
+#unittest.main()
  
