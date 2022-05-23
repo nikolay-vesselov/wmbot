@@ -1,12 +1,16 @@
 import unittest
 
 from wmsigner import Signer
+import sys
 
 # Для запуска тестов эти данные должны быть заполнены
 signer = Signer(wmid='276752932432',
                 keys='/home/ubuntu/wmkeys/276752932432.kwm',
                 password='kickkick')
 
+
+print('+++++',sys.getrecursionlimit(),'+++++')  # 1000
+sys.setrecursionlimit(3000)
 
 class TestWMSigner(unittest.TestCase):
     def test_equal(self):
