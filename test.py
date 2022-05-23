@@ -19,12 +19,12 @@ class TestWMSigner(unittest.TestCase):
         """
         Получение подписи без случайного добавления байт.
         """
-        """
+        
         signature = 'a44bac57cf2efb356441e8c2b1bf6e79f414f99fe9cbd378f560ac' \
                     'ae49e9f96d7cc76e6b74a2caffad1c8c9d386f6b851944538169d5' \
                     'b381545302ff686f00af00a6'
         self.assertEqual(signer.sign('0000'), signature)
-        """
+        
 
     def test_length(self):
         """
