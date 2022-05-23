@@ -11,6 +11,7 @@ signer = Signer(wmid='276752932432',
 
 print('+++++',sys.getrecursionlimit(),'+++++')  # 1000
 sys.setrecursionlimit(10000)
+print('+++++',sys.getrecursionlimit(),'+++++')  # 1000
 
 class TestWMSigner(unittest.TestCase):
     def test_equal(self):
