@@ -1,7 +1,8 @@
 from time import sleep
 import xml.etree.ElementTree as ET
 import requests
-from webmoney_api import ApiInterface, WMProAuthInterface
+#from webmoney_api import ApiInterface, WMProAuthInterface
+import interfaces.py
 
 api = ApiInterface(WMProAuthInterface("276752932432", "kickkick", "/home/ubuntu/wmbot/276752932432.kwm"))
 
