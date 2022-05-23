@@ -7,7 +7,7 @@ import time
 
 api = ApiInterface(WMProAuthInterface("276752932432", "kickkick", "/home/ubuntu/wmbot/276752932432.kwm"))
 
-res = api.x8(purse="R328079907035", reqn=int(time.time()))["response"]["wmid"]["text"]
+res = api.x8(purse="R328079907035", reqn=int(time.time()))#["response"]["wmid"]["text"]
 
 print(res)
 
