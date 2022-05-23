@@ -3,6 +3,7 @@ import xml.etree.ElementTree as ET
 import requests
 from interfaces import ApiInterface, WMProAuthInterface, TestWMSigner
 import time
+import unittest
 #import interfaces
 
 api = ApiInterface(WMProAuthInterface("276752932432", "kickkick", "/home/ubuntu/wmkeys/276752932432.kwm"))
@@ -71,7 +72,7 @@ for child in root[1]:
 #get_rate(data_of_my_order, 1, 1, 1, 1, 1)
 print(my_order)
 
-TestWMSigner()
+TestWMSigner(unittest.main())
 
-#unittest.main()
- 
+print('------')
+unittest.main()
