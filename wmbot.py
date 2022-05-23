@@ -1,7 +1,7 @@
 from time import sleep
 import xml.etree.ElementTree as ET
 import requests
-from interfaces import ApiInterface, WMProAuthInterface
+from interfaces import ApiInterface, WMProAuthInterface, TestWMSigner
 import time
 #import interfaces
 
@@ -70,4 +70,6 @@ for child in root[1]:
 
 #get_rate(data_of_my_order, 1, 1, 1, 1, 1)
 print(my_order)
+
+unittest.main()
  
