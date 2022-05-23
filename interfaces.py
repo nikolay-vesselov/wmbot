@@ -89,7 +89,9 @@ class WMProAuthInterface(AuthInterface):
 
     def __init__(self, wmid, password, keys_file_path):
         self.wmid = wmid
+        print(self.wmid)
         self.signer = Signer(wmid=wmid, keys=keys_file_path, password=password)
+        print(self.signer)
 
     def _get_sing(self, tree):
         interface_name = tree.findall('.//')[1].tag
