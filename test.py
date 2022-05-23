@@ -34,7 +34,7 @@ class TestWMSigner(unittest.TestCase):
 
         digest = b'\xf9\xfdW\xbfu\xcaU\xdb\xb4\x91}\x9f\x16\x9f\xcb\xbb'
         self.assertEqual(signer.md4('0000'), digest)
-
+        print(signer.md4('0000')
 
 if __name__ == '__main__':
     unittest.main()
