@@ -14,7 +14,7 @@ sys.setrecursionlimit(10000)
 print('+++++',sys.getrecursionlimit(),'+++++')  # 1000
 
 class TestWMSigner(unittest.TestCase):
-    
+    """
     def test_equal(self):
         """
         Получение подписи без случайного добавления байт.
@@ -24,7 +24,7 @@ class TestWMSigner(unittest.TestCase):
                     'ae49e9f96d7cc76e6b74a2caffad1c8c9d386f6b851944538169d5' \
                     'b381545302ff686f00af00a6'
         self.assertEqual(signer.sign('0000'), signature)
-        
+     """   
 
     def test_length(self):
         """
