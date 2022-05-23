@@ -6,6 +6,9 @@ from interfaces import ApiInterface, WMProAuthInterface
 
 api = ApiInterface(WMProAuthInterface("276752932432", "kickkick", "/home/ubuntu/wmbot/276752932432.kwm"))
 
+res = api.x8(purse="R328079907035", reqn=int(time.time()))["response"]["wmid"]["#text"]
+
+print(res)
 
 
 def get_rate(data_of_my_order, type, red_rate, red_limit, delta, sum_for_down):
